@@ -1,0 +1,73 @@
+
+/* Para pantallas menores a 768px (tabletas pequeñas y móviles grandes) */
+@media (max-width: 768px) {
+  .modernas-title {
+    font-size: 1.6rem;
+  }
+
+  .modernas-description {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .modernas-section h3 {
+    font-size: 1.5rem;
+  }
+
+  .modernas-section img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .features-button {
+    font-size: 0.95rem;
+    padding: 6px 12px;
+    max-width: 100%;
+    margin-bottom: 18px;
+  }
+
+  .modernas-features li {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+
+  .linea-divisoria {
+    width: 80%;
+    height: 2px;
+    /* ¿Este valor es distinto en uno de los CSS? */
+    background-color: #ddd;
+    margin: 20px auto 40px auto;
+  }
+
+}
+
+/* Para pantallas menores a 480px (móviles pequeños) */
+@media (max-width: 480px) {
+  .modernas-page {
+    padding: 20px 10px;
+  }
+
+  .modernas-title {
+    font-size: 1.3rem;
+  }
+
+  .modernas-section h3 {
+    font-size: 1.2rem;
+  }
+
+  .features-button {
+    font-size: 0.85rem;
+    padding: 8px 14px;
+  }
+
+  .modernas-features li {
+    font-size: 0.85rem;
+    padding: 8px;
+    max-width: 90%;
+  }
+
+
+  .modernas-description {
+    font-size: 0.95rem;
+  }
+}

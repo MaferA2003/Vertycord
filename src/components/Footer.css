@@ -1,0 +1,78 @@
+/* Estilos generales del Footer */
+.footer {
+  background: rgba(0, 168, 168, 1);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif; /* Asegurar la fuente del header */
+}
+
+/* Contenedor de cada footer */
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Sección de cada bloque dentro del footer */
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+  text-align: left;
+  padding-left: 15px;
+}
+
+/* Mapa más grande */
+.map-container iframe {
+  width: 420px; /* Un poco más grande */
+  height: 270px;
+  border-radius: 10px;
+}
+
+/* Ajuste de espaciado en Contacto y Horario */
+.footer-section h3 {
+  font-size: 23px; /* Tamaño más grande */
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-section p {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espacio entre icono y texto */
+}
+
+/* Estilos para el segundo footer */
+.secondary-footer {
+  background: #008080;
+  margin-top: -10px;
+}
+
+/* Sección de "Aceptamos Tarjetas" */
+.footer-section.aceptamos h3 {
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+/* Imagen de Tarjetas */
+.tarjetas-img {
+  width: 350px;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.2));
+}
+
+/* Efecto al pasar el mouse */
+.tarjetas-img:hover {
+  transform: scale(1.1); /* Aumenta un 10% el tamaño */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+}
+

@@ -1,0 +1,114 @@
+.pisos-page {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.pisos-section {
+  margin: 60px 0;
+  padding: 30px 20px;
+  border-bottom: 2px solid #ddd;
+}
+
+.pisos-section h3 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #060000;
+  margin-bottom: 20px;
+  margin-top: -65px;
+}
+
+.pisos-section img {
+  width: 100%;
+  height: auto;
+  max-width: 650px;
+  max-height: 800px;
+  border-radius: 12px;
+  margin: 0 auto 20px auto;
+  background-color: #ffffff;
+  padding: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.pisos-section img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.pisos-description {
+  font-size: 1.1rem;
+  color: #444;
+  max-width: 900px;
+  margin: 20px auto;
+  line-height: 1.6;
+}
+
+.pisos-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #111;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.features-button {
+  background-color: #008080;
+  color: white;
+  padding: 12px 24px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  font-size: 1rem;
+}
+
+.features-button:hover {
+  background-color: #00cccc;
+}
+
+.pisos-features {
+  list-style: none;
+  padding: 0;
+  margin-top: 5px;
+}
+
+.pisos-features li {
+  background: #f0f0f0;
+  padding: 12px;
+  margin: 6px auto;
+  border-radius: 5px;
+  max-width: 600px;
+  font-size: 1rem;
+  color: #444;
+}
+
+.cotizacion-container {
+  background-color: #008080;
+  color: white;
+  padding: 20px 30px;
+  margin: 20px 0;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cotizacion-container:hover {
+  background-color: #00cccc;
+}
+
+.cotizacion-container p {
+  margin: 0;
+}
+
+.linea-divisoria {
+  width: 80%;
+  height: 2px;
+  background-color: #ddd; /* o el color que prefieras */
+  margin: 20px auto 40px auto; /* espacio arriba/abajo */
+}

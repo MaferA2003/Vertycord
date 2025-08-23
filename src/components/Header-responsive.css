@@ -1,0 +1,98 @@
+@media screen and (max-width: 768px) {
+    /* Disposición para móviles */
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 10px;
+        text-align: center;
+    }
+
+    /* Logo en el centro - Lo colocamos primero */
+    .logo-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+        order: -1;  /* Cambia el orden para que aparezca primero */
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .logo-text {
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+
+    /* Sección de los iconos y navegación */
+    .header-left {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 10px;
+        order: 1; /* Los iconos y los links de productos/servicios se moverán después */
+    }
+
+    .header-left a {
+        font-size: 18px;
+        color: black;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+    }
+
+    /* Reorganización de la parte derecha (botón de llamada) */
+    .header-right {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 10px;
+        order: 2; /* El botón de llamada se coloca después de los iconos y productos/servicios */
+    }
+
+    /* Botón de llamada en móviles */
+    .call-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        padding: 8px 12px;
+        width: 90%;
+        max-width: 300px;
+        background-color: #00b6bd;
+        color: white;
+        font-weight: bold;
+        border-radius: 8px;
+        margin: 10px auto;
+        gap: 8px;
+    }
+
+    .call-button i {
+        font-size: 16px;
+    }
+}
+
+/* Estilo para el ícono flotante de WhatsApp en pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .whatsapp-float {
+        font-size: 22px; /* Reducir el tamaño del ícono de WhatsApp */
+        padding: 12px; /* Ajustar el padding para un ícono más pequeño */
+        bottom: 15px; /* Ajustar la posición vertical */
+        right: 15px; /* Ajustar la posición horizontal */
+    }
+}

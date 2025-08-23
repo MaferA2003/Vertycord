@@ -1,0 +1,28 @@
+@media (max-width: 768px) {
+    .servicios-container {
+      grid-template-columns: 1fr;
+      padding: 40px 20px;
+    }
+  
+    .servicio-box {
+      min-height: auto;
+      padding: 70px 20px 40px;
+    }
+  
+    .servicio-box h3 {
+      font-size: 20px;
+      margin-top: 5px;
+    }
+  
+    .servicio-box p {
+      font-size: 15px;
+    }
+  
+    .icono-servicio {
+      width: 70px;
+      height: 70px;
+      font-size: 28px;
+      top: -35px;
+    }
+  }
+  

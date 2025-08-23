@@ -1,0 +1,111 @@
+:root {
+  --turquesa: rgba(0, 168, 168, 1);/* Definir un solo tono de turquesa */
+}
+
+/* ---- Sidebar ---- */
+.sidebar {
+  position: fixed;
+  left: -200px; /* Oculta por defecto */
+  top: 0;
+  width: 200px;
+  height: 100vh;
+  background-color: #000101; /* Fondo oscuro */
+  color: white;
+  transition: left 0.3s ease-in-out;
+  padding-top: 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+  z-index: 1000;
+}
+
+/* Cuando la sidebar está abierta */
+.sidebar.open {
+  left: 0;
+}
+
+/* Lista */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Ítems */
+.sidebar ul li {
+  padding: 15px;
+  text-align: center;
+  position: relative;
+}
+
+/* Enlaces */
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  display: inline-block;
+  transition: color 0.3s ease-in-out;
+  position: relative;
+  z-index: 2;
+  outline: none;
+  padding-bottom: 10px; /* Espacio para la línea */
+}
+
+/* Efecto subrayado al pasar el mouse */
+.sidebar ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--turquesa); /* Puedes definirlo como #00cccc por ejemplo */
+  transition: width 0.3s ease-in-out;
+}
+
+.sidebar ul li a:hover::after {
+  width: 100%;
+}
+
+/* No cambia color del texto al hacer hover */
+.sidebar ul li a:hover {
+  color: white;
+}
+
+/* Opcional: eliminar completamente el fondo al pasar mouse */
+.sidebar ul li:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Estilo para el botón de toggle */
+.toggle-btn {
+  position: absolute;
+  top: 60px;
+  right: -40px;
+  background: #000101; /* Fondo oscuro */
+  color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 50%; /* Forma circular */
+  transition: background 0.3s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para el botón */
+}
+
+
+/* Estilo para el estado activo en los elementos de lista */
+.sidebar ul li:active {
+  background-color: transparent; /* Elimina el color de fondo turquesa al hacer clic */
+}
+
+/* Eliminar cualquier borde o contorno cuando el enlace está enfocado o activo */
+.sidebar ul li a:focus, .sidebar ul li a:active {
+  outline: none; /* Elimina cualquier borde de enfoque */
+  background-color: transparent; /* Elimina cualquier color de fondo extra */
+}
+
+/* No cambiar el color del enlace al hacer hover */
+.sidebar ul li a:hover {
+  color: white; /* El color del texto permanece igual */
+  background-color: transparent; /* Asegura que no se añada ningún fondo al hacer hover */
+}

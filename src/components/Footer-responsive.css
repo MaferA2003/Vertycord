@@ -1,0 +1,83 @@
+/* ========= MEDIA QUERIES ========= */
+
+/* Para tablets y pantallas medianas */
+@media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 10px;
+    }
+  
+    .footer-section {
+      text-align: center;
+      padding-left: 0;
+      margin-bottom: 30px;
+    }
+  
+    .footer-section h3 {
+      font-size: 20px;
+    }
+  
+    .footer-section p {
+      justify-content: center;
+      font-size: 0.95rem;
+    }
+  
+    .map-container iframe {
+        width: 100%;
+        max-width: 400px;
+        height: 270px;
+        border-radius: 10px;
+      }
+      
+  
+    .tarjetas-img {
+      width: 90%;
+      max-width: 320px;
+    }
+  }
+  
+  /* Para celulares y pantallas pequeñas */
+  @media (max-width: 480px) {
+    .footer-section h3 {
+      font-size: 18px;
+    }
+  
+    .footer-section p {
+      font-size: 0.85rem;
+      gap: 6px;
+    }
+  
+    .footer {
+      padding: 15px 10px;
+    }
+  
+    .tarjetas-img {
+      width: 95%;
+      max-width: 300px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 10px;
+    }
+  
+    .footer-section {
+      text-align: center;
+      padding-left: 0;
+    }
+  
+    .map-container iframe {
+      width: 100%;
+      max-width: 100%;
+      height: 200px;
+    }
+  
+    .tarjetas-img {
+      width: 90%;
+    }
+  }
+  

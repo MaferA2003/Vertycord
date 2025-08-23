@@ -1,0 +1,77 @@
+/* Ajustes para pantallas pequeñas y móviles */
+@media screen and (max-width: 768px) {
+    .pisos-page {
+      padding: 15px;
+    }
+  
+    .pisos-title {
+      font-size: 1.5rem;
+      margin-top: 10px;
+    }
+  
+    .pisos-description {
+      font-size: 1rem;
+      margin: 15px auto;
+      padding: 0 10px;
+    }
+  
+    .pisos-section h3 {
+      font-size: 22px;
+      margin-bottom: 18px;
+      margin-top: -25px;
+    }
+  
+    .pisos-section img {
+      max-width: 90%;
+      max-height: 300px;
+    }
+  
+    .features-button {
+      font-size: 0.95rem;
+      padding: 6px 12px;
+      max-width: 85%;
+      margin-top: 10px;
+    }
+  
+    .pisos-features li {
+      font-size: 0.9rem;
+      padding: 10px;
+      margin: 5px auto;
+      width: 90%;
+      margin-bottom: 5px;
+    }
+  
+    .linea-divisoria {
+        width: 80%;
+        height: 2px;
+        /* ¿Este valor es distinto en uno de los CSS? */
+        background-color: #ddd;
+        margin: 20px auto 40px auto;
+      }
+  }
+  
+  /* Ajustes para móviles muy pequeños */
+  @media screen and (max-width: 480px) {
+    .pisos-section img {
+      max-height: 240px;
+    }
+  
+    .features-button {
+      font-size: 0.85rem;
+      padding: 8px;
+    }
+  
+    .pisos-section h3 {
+      font-size: 20px;
+    }
+  
+    .pisos-features li {
+      font-size: 0.85rem;
+      padding: 8px;
+    }
+  
+    .pisos-description {
+      font-size: 0.95rem;
+    }
+  }
+  

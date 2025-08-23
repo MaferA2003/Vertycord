@@ -1,0 +1,183 @@
+/* Estilos generales de la página de productos */
+.product-page {
+  width: 90%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Contenedor de imágenes de productos */
+.product-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 250px; /* Más separación entre imágenes */
+  margin-bottom: 60px;
+  margin-top: 35px;
+}
+
+.product-item {
+  width: 220px;
+  text-align: center;
+}
+
+.product-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.product-item img:hover {
+  transform: scale(1.07);
+}
+
+.product-item h3 {
+  margin-top: 12px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Enlaces: Negro por defecto, cambia de color al pasar el mouse */
+.product-item a {
+  text-decoration: none;
+  color: #000; /* Negro */
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.product-item a:hover {
+  color: #008080; /* Cambia a turquesa */
+}
+
+/* Contenedor de descripciones */
+.product-description-container {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Títulos de productos con línea debajo */
+.product-title {
+  position: relative;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 40px 0;
+  text-align: left;
+}
+
+.product-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%; /* O prueba con 80% si quieres que no sea de extremo a extremo */
+  height: 1.5px;
+  background-color: #ddd; /* O el color que desees */
+}
+
+
+/* Descripción de productos */
+.product-description {
+  margin: 40px 0 40px; /* Más separación entre descripciones */
+  padding-left: 25px;
+}
+
+/* Viñetas modernas */
+.product-description ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Animación para los elementos li */
+.product-description li {
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  position: relative;
+  opacity: 1; /* Los elementos ya son visibles */
+  transition: transform 0.3s ease; /* Suaviza la transición */
+}
+
+/* Efecto al pasar el mouse (hover) */
+.product-description li:hover {
+  transform: scale(1.05); /* Escala el elemento al pasar el mouse */
+  cursor: pointer; /* Cambia el cursor para indicar que es interactivo */
+}
+
+/* Viñetas con diseño moderno */
+.product-description li::before {
+  content: "✓";
+  font-size: 18px;
+  font-weight: bold;
+  color: #008080;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Transición suave para el texto al pasar el mouse */
+.product-description li:hover::before {
+  color: #00cccc; /* Cambia el color de la viñeta al pasar el mouse */
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  background-image: url('/public/modelo1.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* sombra elegante */
+}
+
+/* Overlay con degradado moderno */
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(19, 227, 227, 0.558), 
+    rgba(0, 0, 0, 0.2)
+  );
+  z-index: 1;
+}
+
+/* Título del banner */
+.banner h2 {
+  position: relative;
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffffff;
+  z-index: 2;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6); /* glow elegante */
+  animation: fadeSlideUp 1.5s ease forwards;
+}
+
+/* Animación de entrada */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Efecto interactivo */
+.banner:hover h2 {
+  color: #00e0d6;
+  letter-spacing: 2px;
+  transition: all 0.4s ease;
+}

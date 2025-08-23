@@ -1,0 +1,77 @@
+
+/* Ajustes para pantallas pequeñas y móviles */
+@media screen and (max-width: 768px) {
+    .clasicas-page {
+        padding: 15px;
+    }
+
+    .tradicionales-title {
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+
+    .clasicas-description {
+        font-size: 1rem;
+        margin: 15px auto;
+        padding: 0 10px;
+    }
+
+    .clasicas-section h2 {
+        font-size: 22px;
+        margin-bottom: 18px;
+        margin-top: -25px;
+    }
+
+    .clasicas-carousel video {
+        max-height: 300px;
+    }
+
+    .features-button  {
+        font-size: 0.95rem;
+        padding: 6px 12px;
+        max-width: 85%;
+        margin-top: 10px;
+    }
+    
+    .clasicas-features li {
+        font-size: 0.9rem;
+        padding: 10px;
+        margin: 5px auto;
+        width: 90%;
+        margin-bottom: 5px;
+    }
+
+    .linea-divisoria {
+        width: 80%;
+        height: 1px;
+        background-color: #ddd;
+        margin: 60px auto 100px auto; /* antes era 65px */
+    }    
+
+}
+
+/* Ajustes para móviles muy pequeños */
+@media screen and (max-width: 480px) {
+    .clasicas-carousel video {
+        max-height: 240px;
+    }
+
+    .features-button {
+        font-size: 0.85rem;
+        padding: 8px;
+    }
+
+    .clasicas-section h2 {
+        font-size: 20px;
+    }
+
+    .clasicas-features li {
+        font-size: 0.85rem;
+        padding: 8px;
+    }
+
+    .clasicas-description {
+        font-size: 0.95rem;
+    }
+}
+

@@ -1,0 +1,136 @@
+.modernas-page {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.modernas-section {
+  margin: 60px 0;
+  padding: 30px 20px;
+  border-bottom: 2px solid #ddd;
+}
+
+.modernas-section h3 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #060000;
+  margin-bottom: 20px;
+  margin-top: -65px;
+}
+
+.linea-divisoria {
+  width: 80%;
+  height: 2px;
+  background-color: #ddd; /* o el color que prefieras */
+  margin: 20px auto 40px auto; /* espacio arriba/abajo */
+}
+
+.modernas-section .carousel {
+  max-width: 1000px; /* Aumentado */
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.modernas-section img {
+  width: 100%;
+  height: auto;
+  max-width: 650px;  /* Limita el ancho máximo de las imágenes */
+  max-height: 800px; /* Limita la altura máxima de las imágenes */
+  border-radius: 12px;
+  margin: 0 auto 20px auto;
+  background-color: #ffffff;
+  padding: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+
+.modernas-section img:hover {
+  transform: scale(1.02);  /* Aumenta el zoom al pasar el mouse */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+
+.modernas-description {
+  font-size: 1.1rem;
+  color: #444;  /* Aquí puedes cambiar el color de la descripción */
+  max-width: 900px;
+  margin: 20px auto;  /* Agregado margen para separar del resto de los elementos */
+  line-height: 1.6;
+}
+
+
+.modernas-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #111;
+  margin-top: 5px; /* Ajustando el margen superior */
+  margin-bottom: 20px; /* Asegurando el mismo margen inferior */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.features-button{
+  background-color: rgba(0, 168, 168, 1);
+  color: white;
+  padding: 12px 24px;
+  margin-top: 10px;
+  margin-bottom: 25px; /* <-- este es el nuevo espacio */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  font-size: 1rem;
+}
+
+.features-button:hover {
+  background-color: #00cccc;
+}
+
+.modernas-features {
+  list-style: none;
+  padding: 0;
+  margin-top: 5px;
+}
+
+.modernas-features li {
+  background: #f0f0f0;
+  padding: 12px;
+  margin: 6px auto;
+  border-radius: 5px;
+  max-width: 600px;
+  font-size: 1rem;
+  color: #444;  /* Aquí puedes cambiar el color de la letra de los detalles */
+}
+
+/* Estilo para el contenedor de la frase */
+.cotizacion-container {
+  background-color: #008080;  /* Color de fondo elegante */
+  color: white;
+  padding: 20px 30px;
+  margin: 20px 0;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 10px;  /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Efecto cuando se pasa el mouse */
+.cotizacion-container:hover {
+  background-color: #00cccc;  /* Cambio de color cuando el mouse está encima */
+}
+
+/* Estilo adicional para el texto */
+.cotizacion-container p {
+  margin: 0;
+}
+
+.linea-divisoria {
+  width: 80%;
+  height: 2px;
+  background-color: #ddd; /* o el color que prefieras */
+  margin: 20px auto 40px auto; /* espacio arriba/abajo */
+}
+

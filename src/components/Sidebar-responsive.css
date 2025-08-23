@@ -1,0 +1,78 @@
+/* Estilos para pantallas pequeñas (móviles) */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    position: fixed; /* Sidebar fijo */
+    top: 0;
+    left: -180px; /* Escondido por defecto en pantallas pequeñas */
+    height: 100%; /* El sidebar ocupa toda la altura */
+    width: 180px; /* Ancho fijo del sidebar en pantallas pequeñas */
+    background-color: #333; /* Color de fondo */
+    transition: left 0s ease-in-out; /* Sin animación, solo mover el 'left' */
+  }
+
+  /* Ajustar el espacio entre las opciones del sidebar */
+  .sidebar ul li {
+    padding: 10px 15px; /* Espaciado adecuado entre las opciones */
+    text-align: center; /* Centrar el texto */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Asegura que cada opción ocupe todo el ancho del sidebar */
+    box-sizing: border-box; /* Para que el padding no afecte el tamaño */
+    margin-bottom: -15px; /* Espacio entre los elementos */
+  }
+
+  /* Cuando se pasa el mouse por encima de una opción */
+  .sidebar ul li:hover {
+    background-color: var(--turquesa); /* Fondo turquesa al pasar el mouse */
+  }
+
+  /* Botón de toggle */
+  .toggle-btn {
+    top: 15px; /* Ajusta la posición del botón */
+    right: 10px; /* Ajusta la distancia del borde */
+    font-size: 24px; /* Tamaño de la fuente del icono */
+    width: 40px; /* Ajustar el ancho del botón */
+    height: 40px; /* Ajustar la altura del botón */
+    border-radius: 50%; /* Forma circular */
+    display: flex; /* Usamos flex para centrar el icono dentro del botón */
+    justify-content: center;
+    align-items: center;
+    background-color: #000101; /* Fondo oscuro */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: none; /* Sin transición en el hover */
+  }
+
+  .toggle-btn:hover {
+    background-color: var(--turquesa); /* Fondo turquesa al pasar el mouse */
+  }
+
+  .toggle-btn:focus {
+    outline: none; /* Eliminar el borde de enfoque */
+  }
+
+  /* Ajustar el tamaño de la lista y los elementos en pantallas pequeñas */
+  .sidebar ul li a {
+    font-size: 14px; /* Reducir el tamaño de la fuente solo en pantallas pequeñas */
+    color: white;
+    text-decoration: none;
+  }
+}
+
+/* Estilos para pantallas grandes */
+@media screen and (min-width: 769px) {
+  .sidebar {
+    position: fixed; /* Sidebar fijo en pantalla grande */
+    top: 0;
+    left: 0; /* Siempre visible */
+    height: 100%; /* Ocupa toda la altura */
+    width: 220px; /* Ancho fijo del sidebar en pantallas grandes */
+  }
+
+  .toggle-btn {
+    display: flexbox; /* El botón no es necesario en pantallas grandes */
+  }
+}

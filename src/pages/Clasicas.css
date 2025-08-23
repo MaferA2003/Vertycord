@@ -1,0 +1,88 @@
+.clasicas-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.tradicionales-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #111;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.clasicas-description {
+  font-size: 1.1rem;
+  color: #444;
+  max-width: 900px;
+  margin: 20px auto;
+  line-height: 1.6;
+}
+
+.linea-divisoria {
+  width: 80%;
+  height: 2px;
+  background-color: #ddd;
+  margin: 20px auto 40px auto;
+}
+
+.clasicas-section {
+  margin: 40px 0;
+  padding: 20px;
+  border-bottom: 2px solid #ddd;
+}
+
+.clasicas-section h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #060000;
+  margin-bottom: 20px;
+  margin-top: -10px;
+}
+
+/* Estilos para videos */
+.clasicas-section video {
+  width: 100%;
+  max-width: 850px;
+  max-height: 650px;
+  object-fit: contain;
+  border-radius: 12px;
+  background-color: #fff;
+  display: block;
+  margin: 0 auto;
+}
+
+.features-button {
+  background-color: rgba(0, 168, 168, 1);
+  color: white;
+  padding: 12px 24px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  font-size: 1rem;
+}
+
+.features-button:hover {
+  background-color: #00cccc;
+}
+
+.clasicas-features {
+  list-style: none;
+  padding: 0;
+  margin-top: -5px;
+}
+
+.clasicas-features li {
+  background: #f0f0f0;
+  padding: 12px;
+  margin: 6px auto;
+  border-radius: 5px;
+  max-width: 600px;
+  font-size: 1rem;
+  color: #444;
+}
