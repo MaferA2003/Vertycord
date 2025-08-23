@@ -16,7 +16,7 @@ const Header = () => {
           <a href="https://www.instagram.com/vertycord__decoraciones/" target="_blank" rel="noopener noreferrer">
             <FaInstagram className="icon" />
           </a>
-          <a href="https://www.tiktok.com/@vertycord?_t=ZM-8vMyIkFi1ah&_r=1" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.tiktok.com/@cortinas90?_t=ZM-8z7x28AccKc&_r=1" target="_blank" rel="noopener noreferrer">
             <FaTiktok className="icon" />
           </a>
           <nav>
