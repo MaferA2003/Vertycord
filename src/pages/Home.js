@@ -23,25 +23,25 @@ const Home = () => {
         className="carousel-container"
       >
         <div className="carousel-slide">
-          <img src="portada13.png" alt="Cortina 1" />
+          <img src="Portada13.png" alt="Cortina 1" />
           <div className="carousel-caption">
             <p>Confía en Vertycord y dale a tu hogar el estilo y confort que merece.</p>
           </div>
         </div>
         <div className="carousel-slide">
-          <img src="portada11.png" alt="Cortina 2" />
+          <img src="Portada11.png" alt="Cortina 2" />
           <div className="carousel-caption">
             <p>Confía en Vertycord y dale a tu hogar el estilo y confort que merece.</p>
           </div>
         </div>
          <div className="carousel-slide">
-          <img src="portada2.png" alt="Cortina 1" />
+          <img src="Portada2.png" alt="Cortina 1" />
           <div className="carousel-caption">
             <p>Confía en Vertycord y dale a tu hogar el estilo y confort que merece.</p>
           </div>
         </div>
           <div className="carousel-slide">
-          <img src="portada1.png" alt="Cortina 1" />
+          <img src="Portada1.png" alt="Cortina 1" />
           <div className="carousel-caption">
             <p>Confía en Vertycord y dale a tu hogar el estilo y confort que merece.</p>
           </div>
