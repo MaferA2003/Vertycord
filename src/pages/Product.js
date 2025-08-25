@@ -9,19 +9,19 @@ const Product = () => {
       {/* Sección de Imágenes en Línea */}
       <div className="product-images">
         <div className="product-item">
-          <Link to="/pages/modernas">
+          <Link to="/modernas">
             <img src="/modernas.jpg" alt="Cortinas Modernas" />
             <h3>Cortinas Modernas</h3>
           </Link>
         </div>
         <div className="product-item">
-          <Link to="/pages/clasicas">
+          <Link to="/clasicas">
             <img src="/tradicionales.jpg" alt="Cortinas Clásicas" />
             <h3>Cortinas Tradicionales</h3>
           </Link>
         </div>
         <div className="product-item">
-          <Link to="/pages/pisos">
+          <Link to="/pisos">
             <img src="/piso.jpg" alt="Pisos Laminados" />
             <h3>Pisos Laminados</h3>
           </Link>
