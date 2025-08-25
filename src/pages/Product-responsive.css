@@ -1,13 +1,11 @@
 /* Estilos Generales para Dispositivos Móviles */
 @media screen and (max-width: 768px) {
-
     /* Estilo para la página de productos */
     .product-page {
         width: 100%;
         margin: 0;
         padding: 10px;
     }
-
     /* Contenedor de imágenes de productos */
     .product-images {
         flex-direction: column;
@@ -15,14 +13,12 @@
         gap: 50px;
         /* Reduce la separación */
     }
-
     .product-item {
         width: 100%;
         max-width: 300px;
         /* Asegura que las imágenes no sean demasiado grandes */
         margin: 0 auto;
     }
-
     .product-item img {
         width: 80%;
         height: auto;
@@ -31,14 +27,12 @@
         margin-left: auto; /* Centra la imagen a la izquierda */
         margin-right: auto; /* Centra la imagen a la derecha */
     }
-
     .product-title {
         font-size: 2rem;
         /* Reduce el tamaño de la fuente */
         text-align: center;
         margin: 20px 0;
     }
-
     /* Contenedor de descripciones */
     .product-description-container {
         width: 100%;
@@ -46,76 +40,73 @@
         margin: 20px 0;
         padding: 0 10px;
     }
-
     .product-description ul {
         padding-left: 20px;
     }
-
     /* Títulos de productos con línea debajo */
     .product-title::after {
         width: 100%;
         /* Reduce el ancho de la línea en pantallas pequeñas */
     }
-
-    /* Banner */
+    
+    /* BANNER - Mantiene el mismo estilo que en desktop */
     .banner {
-        height: 180px;
-        /* Reduce la altura del banner */
-        padding: 20px;
-        font-size: 20px;
+        height: 280px; /* Mantiene la altura original */
     }
-
     .banner h2 {
-        font-size: 20px;
+        font-size: 40px; /* Mantiene el tamaño original */
     }
-
+    /* Removemos el cambio de opacidad del overlay */
     .banner::before {
-        background: rgba(68, 239, 222, 0.5);
-        /* Opacidad ajustada para el banner */
+        background: linear-gradient(
+            rgba(19, 227, 227, 0.558), 
+            rgba(0, 0, 0, 0.2)
+        ); 
     }
 }
 
 /* Estilos para dispositivos muy pequeños (menos de 480px de ancho) */
 @media screen and (max-width: 480px) {
-
     /* Contenedor de imágenes de productos */
     .product-images {
         gap: 20px;
         /* Reducción adicional del espacio */
     }
-
     .product-item {
         width: 100%;
         max-width: 270px;
     }
-
     /* Títulos de productos */
     .product-title {
         font-size: 20px;
         /* Reduce aún más el tamaño del título */
         text-align: center;
     }
-
     /* Descripción de productos */
     .product-description li {
         font-size: 16px;
         /* Reduce el tamaño de la fuente */
         margin-bottom: 15px;
     }
-
     /* Estilo de las imágenes al pasar el mouse */
     .product-item img:hover {
         transform: scale(1.05);
         /* Reducción del efecto de zoom */
     }
-
+    
+    /* BANNER - Para pantallas muy pequeñas, ajuste mínimo pero manteniendo la esencia */
     .banner {
-        font-size: 18px;
-        /* Ajuste para dispositivos más pequeños */
+        height: 220px; /* Reducción mínima para pantallas muy pequeñas */
+        padding: 15px; /* Padding mínimo para evitar que el texto toque los bordes */
     }
-
+    .banner h2 {
+        font-size: 32px; /* Reducción mínima del texto para que quepa bien */
+    }
+    /* Mantiene el degradado original */
     .banner::before {
-        background: rgba(68, 239, 222, 0.7);
-        /* Opacidad ajustada para mejorar la legibilidad */
+        background: linear-gradient(
+            rgba(19, 227, 227, 0.558), 
+            rgba(0, 0, 0, 0.2)
+        );
     }
 }
