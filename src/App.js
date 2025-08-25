@@ -21,12 +21,11 @@ function App() {
           <div className="page-content">
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/product" element={<Product />} />
+              <Route path="/productos" element={<Product />} />
               <Route path="/servicios" element={<Servicios />} />
-              <Route path="/pages/modernas" element={<Modernas />} /> {/* Ruta para Modernas */}
-              <Route path="/pages/clasicas" element={<Clasicas />} /> {/* Ruta para Clasicas */}
-              <Route path="/pages/pisos" element={<Pisos />} /> {/* Ruta para Pisos */}
-              <Route path="/pages/automatizacion" element={<Automatizacion />} /> {/* Ruta para Pisos */}
+              <Route path="/modernas" element={<Modernas />} /> {/* Ruta para Modernas */}
+              <Route path="/clasicas" element={<Clasicas />} /> {/* Ruta para Clasicas */}
+              <Route path="/pisos" element={<Pisos />} /> {/* Ruta para Pisos */}
             </Routes>
           </div>
           <Footer />

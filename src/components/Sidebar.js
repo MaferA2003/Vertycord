@@ -17,11 +17,11 @@ function Sidebar() {
       </button>
       <ul>
         <li><Link to="/">Inicio</Link></li>
-        <li><Link to="/product">Productos</Link></li>
-        <li><Link to="/pages/modernas">Modernas</Link></li>
+        <li><Link to="/productos">Productos</Link></li>
+        <li><Link to="/modernas">Modernas</Link></li>
         <li><Link to="/servicios">Servicios</Link></li>
-        <li><Link to="/pages/clasicas">Tradicionales</Link></li>
-        <li><Link to="/pages/pisos">Pisos</Link></li>
+        <li><Link to="/clasicas">Tradicionales</Link></li>
+        <li><Link to="/pisos">Pisos</Link></li>
       </ul>
     </div>
   );
